@@ -59,6 +59,34 @@
             background-color: #374151; /* Gray-700 */
             transform: rotateY(180deg);
         }
+        .bar-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            width: 100%;
+        }
+        .bar-label {
+            width: 35%; /* Adjust as needed */
+            text-align: right;
+            padding-right: 1rem;
+            font-weight: 500;
+            color: #D1D5DB; /* gray-300 */
+        }
+        .bar-wrapper {
+            width: 65%;
+            background-color: #374151; /* gray-700 */
+            border-radius: 0.25rem;
+            overflow: hidden;
+        }
+        .bar {
+            height: 1.75rem;
+            line-height: 1.75rem;
+            padding-left: 0.75rem;
+            color: #1F2937; /* gray-800 */
+            font-weight: 600;
+            white-space: nowrap;
+            border-radius: 0.25rem;
+        }
     </style>
 </head>
 <body class="bg-gray-800 text-gray-200">
@@ -70,6 +98,63 @@
             <h1 class="text-4xl font-bold text-white mb-2">L'IA comme Partenaire Stratégique</h1>
             <p class="text-xl text-gray-400">Utiliser la matrice <span class="font-bold text-amber-400">DREAMS</span> pour nos métiers chez Petzl</p>
         </header>
+
+        <!-- NEW: AI Landscape Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-white mb-6 text-center">Notre position dans le paysage de l'IA</h2>
+            <div class="max-w-4xl mx-auto text-center text-gray-300 mb-8">
+                <p class="mb-4">Le monde des modèles d'IA évolue à une vitesse fulgurante. De nombreux acteurs (OpenAI, Google, Anthropic, Mistral...) rivalisent d'innovation. Chez Petzl, nous avons standardisé notre usage sur la famille de modèles <span class="font-semibold text-white">Google Gemini</span> pour des raisons de performance, de sécurité et d'intégration à notre écosystème.</p>
+                <p>Pour comprendre où se situe notre outil, voici un aperçu du classement des meilleurs modèles, basé sur les données du site d'analyse indépendant <a href="https://artificialanalysis.ai/" target="_blank" class="text-amber-400 underline hover:text-amber-300">Artificial Analysis</a>. Cela confirme que nous disposons d'un outil de premier plan pour nous assister.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-gray-900/50 p-6 rounded-lg">
+                <h3 class="text-lg font-bold text-white mb-4 text-center">Classement des Modèles (Elo Rating)</h3>
+                <p class="text-xs text-center text-gray-500 mb-4">L'Elo est une mesure de la performance relative. Un score plus élevé est meilleur. Données de Juillet 2024.</p>
+                
+                <div class="space-y-3">
+                    <!-- GPT-4o -->
+                    <div class="bar-container">
+                        <div class="bar-label">1. GPT-4o</div>
+                        <div class="bar-wrapper">
+                            <div class="bar bg-green-400" style="width: 100%;">1271</div>
+                        </div>
+                    </div>
+                    <!-- Claude 3 Opus -->
+                    <div class="bar-container">
+                        <div class="bar-label">2. Claude 3 Opus</div>
+                        <div class="bar-wrapper">
+                            <div class="bar bg-purple-400" style="width: 96%;">1251</div>
+                        </div>
+                    </div>
+                    <!-- Gemini 1.5 Pro -->
+                    <div class="bar-container">
+                        <div class="bar-label">3. Gemini 1.5 Pro</div>
+                        <div class="bar-wrapper">
+                            <div class="bar bg-amber-400" style="width: 93%;">1242</div>
+                        </div>
+                    </div>
+                    <!-- GPT-4 Turbo -->
+                    <div class="bar-container">
+                        <div class="bar-label">4. GPT-4 Turbo</div>
+                        <div class="bar-wrapper">
+                            <div class="bar bg-green-400/70" style="width: 85%;">1212</div>
+                        </div>
+                    </div>
+                     <!-- Claude 3 Sonnet -->
+                    <div class="bar-container">
+                        <div class="bar-label">5. Claude 3 Sonnet</div>
+                        <div class="bar-wrapper">
+                            <div class="bar bg-purple-400/70" style="width: 78%;">1191</div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="text-center mt-6">
+                    <a href="https://artificialanalysis.ai/" target="_blank" class="inline-block bg-amber-500 text-gray-900 font-bold py-2 px-4 rounded-lg hover:bg-amber-400 transition-colors">
+                        Voir le classement en direct sur ArtificialAnalysis.ai
+                    </a>
+                </div>
+            </div>
+        </section>
 
         <!-- DREAMS Explanation Section -->
         <section class="mb-12">
